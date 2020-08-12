@@ -1,0 +1,100 @@
+/* ------------------------------
+    Base Styles
+------------------------------ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    color: #75c3cd;
+}
+
+h2 {
+    color: #11385c;
+}
+
+p {
+    color: #082442;
+}
+
+body {
+    position: relative;
+}
+
+/* ------------------------------
+    Modal Styles
+------------------------------ */
+
+.overlay {
+    position: absolute;
+    top : 0;
+    left : 0;
+    right : 0;
+    bottom : 0;
+    background : rgba (100, 100, 100, 0.4);
+}
+
+.modal {
+    width: 500px;
+    margin: 15% auto auto;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #c2c0c0;
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ------------------------------
+    Layout & Grid Styles
+------------------------------ */
+
+.grid-container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    height: 90vh;
+}
+
+.header-container {
+    width: 90%;
+    margin: 0 auto;
+    height: 10vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#employee-search {
+    margin-left: auto;
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+}
