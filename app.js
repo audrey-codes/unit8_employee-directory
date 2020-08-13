@@ -8,6 +8,7 @@ const modalContainer = document.querySelector(".modal-content");
 const modalClose = document.querySelector(".modal-close");
 const back = document.querySelector(".back");
 const forward = document.querySelector(".forward");
+let currentIndex;
 
 
 // Fetch Data from Random User API
@@ -109,3 +110,26 @@ forward.addEventListener('click', () => {
 modalClose.addEventListener('click', () => {
     overlay.classList.add("hidden");
 });
+
+
+// Employee Search Functionality
+
+function searchPeople() {
+    const input = document.querySelector('#employee-search').value.toUpperCase();
+    const people = document.querySelectorAll('.card');
+  
+    for (i = 0; i < people.length; i++) {
+  
+      const names = document.querySelectorAll('.card')[i].children[1].children[0].textContent.toUpperCase();
+  
+      const indexSearch = names.indexOf(input);
+  
+      if (indexSearch > -1 ) {
+        document.querySelectorAll('.card')[i].style.display = '';
+      } else {
+        document.querySelectorAll('.card')[i].style.display = 'none';
+      }
+    }
+  }
+  
+  document.querySelector('#employee-search').addEventListener("keyup", searchPeople);
