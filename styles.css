@@ -67,7 +67,7 @@ body {
 }
 
 /* ------------------------------
-    Layout & Grid Styles
+    Layout Styles
 ------------------------------ */
 
 .grid-container {
@@ -96,6 +96,7 @@ body {
     margin-left: auto;
     width: 350px;
     height: 40px;
+    border: 2px solid #c2e2e8;
     border-radius: 10px;
     outline: none;
     padding-left: 10px;

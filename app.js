@@ -102,3 +102,10 @@ forward.addEventListener('click', () => {
         displayModal(currentIndex);
     }
 });
+
+
+// Close Modal Pop-Up
+
+modalClose.addEventListener('click', () => {
+    overlay.classList.add("hidden");
+});
